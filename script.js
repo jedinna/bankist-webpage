@@ -29,4 +29,27 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
-const Allsectioons=document.querySelectorAll('.section')
+// const Allsectioons=document.querySelectorAll('.section')
+
+// const message = document.createElement('div');
+// message.classList.add('cookie-message');
+// message.innerHTML= `We use cookie for improved functionality
+// <button class="btn btn--close-cookie">Got it</button>`
+// document.querySelector('.header').append(message);
+
+// document.querySelector('.btn--close-cookie').addEventListener('click',function(){
+//   message.remove();
+// })
+
+// message.style.backgroundColor='#37383d';
+// message.style.width ='120%'
+
+// message.style.height = Number.parseFloat(getComputedStyle(message).height,10) + 40 +'px'
+
+
+const btnScroollTo = document.querySelector('.btn--scroll-to');
+const sectiion1 = document.querySelector('#section--1');
+
+btnScroollTo.addEventListener('click',function(e){
+sectiion1.scrollIntoView({behavior:'smooth'});
+})
